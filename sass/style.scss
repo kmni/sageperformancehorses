@@ -1,0 +1,37 @@
+// We use Grunt to concatenate and compile less files.
+// This file should help you reproduce our rules, but since less
+// has no mechanism to import multiple files, you must include here
+// all less files from subfolders by your self
+
+
+
+//external imports
+@import 'core/import.scss';
+
+@media screen {
+	
+	//all non-underscored less files from folder helpers
+	@import 'helpers/basicMixins.scss';
+	
+	//reset
+	@import 'plugins/reset.scss';
+	
+	//all non-underscored less files from folder plugins (excluding reset)
+	
+	//common definitions
+	@import 'core/common.scss';
+	
+	//all core styles
+	@import 'core/main.scss';
+	
+	//all responsive styles
+	@import 'responsive/responsive.scss';
+	
+}
+
+@media print {
+	
+	//all responsive styles
+	@import 'print/print.scss';
+	
+}

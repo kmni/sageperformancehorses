@@ -1,0 +1,155 @@
+//
+// Mixins
+//
+
+//clearfix
+@mixin clear {
+	&:before,
+	&:after {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+	*zoom: 1;
+}
+
+@mixin fontFace ($fontName, $fontFile, $fontWeight: normal, $fontStyle: normal) {
+	@font-face {
+		font-family: $fontName;
+		font-weight: $fontWeight;
+		font-style: $fontStyle;
+		src: url($fontsDir + $fontFile + ".eot");
+		src: url($fontsDir + $fontFile + ".eot?#iefix") format("embedded-opentype"),
+			url($fontsDir + $fontFile + ".woff") format("woff"),
+			url($fontsDir + $fontFile + ".ttf") format("truetype");
+	}
+}
+
+//absolute vertical and horizontal centering
+//parent must have position relative or absolute
+//requires declared height
+@mixin absCenter {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+//placeholder multidefinition
+// usage:
+//  input, textarea {
+//    @include placeholder {
+//      color: black;
+//      font-style: italic;
+//    }
+//  }
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}  
+}
+
+//vertically centered text
+@mixin verticalText($height, $subset: 0) {
+	height: $height;
+	line-height: ($height - $subset);
+}
+
+@mixin transition(){
+    
+    transition: background .2s, color .2s, opacity .2s;
+}
+
+//backgorund definitions
+@mixin bg($color, $image: '', $position: 0 0, $repeat: no-repeat) {
+	@if type-of($color) == color and type-of($image) == string and $image != '' {
+		background: $color url($imagesDir + $image) $repeat $position;
+	} @else if type-of($color) == color and $image == '' {
+		background-color: $color;
+	} @else if type-of($color) == string {
+		@if $image == '' {
+			background: url($imagesDir + $color) $repeat $position;
+		} @else {
+			@if nth($position, 1) == 0 and nth($position, 2) == 0 {
+				background: url($imagesDir + $color) $repeat $image;
+			} @else {
+				background: url($imagesDir + $color) $position $image;
+			}
+		}
+	}
+}
+
+@mixin bgImg($image) {
+	background-image: url($imagesDir + $image);
+}
+
+@mixin bgImg($image) {
+	background-image: url($imagesDir + $image);
+}
+
+//width and height
+@mixin sizeWH($width, $height) {
+	width: $width;
+	height: $height;
+}
+
+@mixin size($dim) {
+	width: $dim;
+	height: $dim;
+}
+
+//relative position
+@mixin rel($left: 0, $top: 0) {
+	position: relative;
+	top: $top;
+	left: $left;
+}
+
+//absolute position
+@mixin abs($left: 0, $top: 0) {
+	position: absolute;
+	top: $top;
+	left: $left;
+}
+
+@mixin absR($right: 0, $top: 0) {
+	position: absolute;
+	top: $top;
+	right: $right;
+}
+
+@mixin absB($left: 0, $bottom: 0) {
+	position: absolute;
+	bottom: $bottom;
+	left: $left;
+}
+
+@mixin absRB($right: 0, $bottom: 0) {
+	position: absolute;
+	bottom: $bottom;
+	right: $right;
+}
+
+//hidden element
+@mixin hidden() {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+
+@mixin radius($size){
+	border-radius: $size;
+	-moz-border-radius: $size;
+	-webkit-border-radius: $size;
+}
+
+@mixin boxShadow($size, $color, $opacity){
+	-webkit-box-shadow: $size rgba($color, $opacity);
+	-moz-box-shadow: $size rgba($color, $opacity);
+	box-shadow: $size rgba($color, $opacity);	
+}

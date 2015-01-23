@@ -1,0 +1,308 @@
+//
+// Responsive
+//
+
+@media only screen and (max-width: 1024px) {
+
+    .pageHeader {
+	width: 90%;
+	padding: 40px 0 0;
+	 
+	.logo {
+	    margin:0 auto 20px;
+	}
+    }
+    
+    .mainWrapper {
+	    h1 {
+			padding-top:0;
+		}
+	
+		article, .article {
+			.more {
+				margin-top: 10px;
+				margin-right: 60px;		
+			}
+		}
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    
+    footer {
+		padding-right:0;
+	
+		p {
+			width: 90%;
+			margin:0 auto;
+		}
+    }
+	
+	.feed {
+		.item {
+			.postInfo {
+				img {
+					display:none;
+				}
+				
+				p.date {
+					clear: both;
+					display: block;
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 800px) {
+
+    .mainWrapper {
+		article, .article {
+			.more {
+				margin-right: 0;		
+			}
+		}	
+	
+		.boxes.special {	    
+			.item {
+			width: 100%;
+			margin-right:0;
+			float:none;
+			padding: 20px 20px 0;
+
+				table {
+					@include clear;
+				}
+			}
+		}
+	
+		.boxes.categories {
+			.item {
+				width: 100%;
+				margin-right:0;
+				margin-bottom: 1%;
+				float:none;	
+
+				.photo {
+					float:left;
+					width:40%;
+				}
+
+				h2 {
+					padding-top: 10px;
+				}
+
+				p {
+					padding: 10px 50px;
+					position:relative;
+					left:25px;
+					font-size:1.2em;
+				}
+
+				.pedigree {
+					position:absolute;
+					width:60%;
+					right:0;
+					padding:0;
+					left:auto;
+					bottom:10px;
+					text-align:center;
+				}		
+			}
+		}
+	
+		.news {
+			width: 100%;
+			margin-right:0;
+			float:none;
+
+			.item {
+				width: 48%;
+				margin-left:2%;
+				margin-bottom:2%;
+				float:left;
+
+				&:nth-child(2n) {
+					margin-right:0;
+				}
+			}
+		}
+	
+		.feed {
+			width: 100%;
+			float:none;
+
+			.item {
+				float:left;
+
+				&:nth-child(2n) {
+					margin-right:0;
+				}
+			}
+		}
+    }   
+}
+
+@media only screen and (max-width: 640px) {
+ 
+    .pageHeader {	 
+		.logo {
+			width: 30%;
+			min-width:150px;
+		}
+    }
+    
+    .mainWrapper {
+	    .banner {
+			padding-bottom: 20px;	    
+	    }
+	
+		.boxes {	    
+			.item {
+				width: 100%;
+				margin-right:0;
+				float:none;
+				padding: 20px 20px 0;
+
+				h2 {
+					padding-bottom:0;
+				}				
+			}
+		}
+    }
+	
+	.slider{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+    
+    .mainWrapper {
+		.boxes {		
+			.item {
+				h2 {
+					float:none;
+				}
+
+				.desc {
+					width: 100%;
+					position:relative;
+					left:0;
+				}
+			}		
+		}	
+    }
+}
+
+@media only screen and (max-width: 400px) {
+ 
+    .mainWrapper {	
+		.news {
+			width: 100%;
+			float:none;
+
+			.item {
+				width:98%;
+			}
+		}	
+		
+		.feed {
+			width: 100%;
+			float:none;
+
+			.item {
+				width:98%;
+			}
+		}	
+    }
+    
+    footer {
+		p {
+			font-size: 1.1em;
+		}	
+    }
+}
+
+@media only screen and (max-height: 480px) {
+ 
+    .sideMenu {
+		position:fixed;
+		z-index: 11;
+		top:0;
+		left:0;
+		right:0;
+		bottom:auto;
+		width:auto;
+		height:auto;
+		@include bg(#27272f, 'none');
+		display:none;
+
+		img {
+			display:none;
+		}
+
+		li {
+			width:50%;
+			float:left;
+			display:block;
+
+			a {
+				display:block;
+				padding: 12px 20px;
+				@include bg(#27272f);	    
+				font-weight:500;
+				font-size: 1.9em;
+				color:#f1f1f2;
+				border-right:none;	    
+				border-bottom:1px solid #1f1f27;
+
+				&:hover {
+					@include bg(#3e3e4a);
+					border-right:none;
+				}
+			}
+
+			&.parent {
+				a {
+					@include bg(#304f45);
+					border-right:none;	    
+					border-bottom:1px solid #253938;				
+
+					&:hover {
+					@include bg(#426c5e);
+					border-right:none;
+					border-bottom:1px solid #30574a;
+					}
+				}
+
+				li {
+					width:100%;		    
+
+					a {
+						@include bg(#54907b);
+						text-transform:uppercase;
+						font-size:1.3em;
+						border-right:none;	    
+						border-bottom:1px solid #4b8973;		    
+					}
+				}
+			}
+		}
+
+		.close {
+			display:block;
+		}
+    }
+}
+
+@media only screen and (max-height: 240px) {
+    .sideMenu {
+		li {
+			a {
+				padding: 8px 15px;
+			}
+		}
+    }
+}
