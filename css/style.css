@@ -1351,7 +1351,8 @@
       .topLinks ul.social {
         float: right; }
       .topLinks ul.toggleMenu {
-        float: left; }
+        position: fixed;
+        top: 30px; }
     .topLinks li {
       float: left; }
       .topLinks li a {

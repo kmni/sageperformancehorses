@@ -647,7 +647,9 @@ footer {
 		}
 
 		&.toggleMenu {
-			float: left;
+			//float: left;
+			position: fixed;
+			top: 30px;
 		}
     }
 
