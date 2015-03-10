@@ -6,81 +6,85 @@
 <!--[if gt IE 9]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8" />
-	<title>SageHorses</title>
-	<meta name="description" content="" />
+	<!-- TemplateBeginEditable name="doctitle" -->
+	<title>Sage Performance Horses</title>
+	<!-- TemplateEndEditable -->
+	<meta name="description" content="Whether hunter, western, country or English, Stephanie is a rising star in the industry creating successful and happy show horses in the open, amateur and youth divisions." />
 	<meta name="robots" content="index,follow" />
-
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	
+    <link rel="shortcut icon" href="../favicon.ico">
+	<link rel="icon" href="../favicon.ico">
+
 	<script>
 		document.documentElement.className = document.documentElement.className.replace(/(^|\s)no-js(\s|$)/, "$1js$2");
 	</script>
-	
-	<link href="./css/style.css" rel="stylesheet" media="all" />
-	
-	<script src="./js/script.js"></script>
-	
+
+	<link href="../css/style.css" rel="stylesheet" media="all" />
+    <link href="../css/custom.css" rel="stylesheet">
+    
+    <script src="../js/script.js"></script>
+
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
 </head>
-<body class="">	
-	
+<body class="">
+
 <div id="wrapper">
 <aside class="topLinks">
     <ul class="social">
-	<li class="facebook"><a href="#"><span>Facebook</span></a></li>
-	<li class="email"><a href="#"><span>E-mail</span></a></li>
+	<li class="facebook"><a href="https://www.facebook.com/sageperformancehorses" target="_blank"><span>Facebook</span></a></li>
+	<li class="email"><a href="mailto:SagePerformanceHorses@yahoo.com"><span>E-mail</span></a></li>
     </ul>
-    
+
     <ul class="toggleMenu">
 	<li class="menu"><span>Menu</span></li>
     </ul>
-</aside>	
+</aside>
 
 <header class="pageHeader">
-    <div class="logo"><a href="home.html"><img src="img/logo.png" alt="Sage Horses" /></a></div>
+    <h1 class="logo"><a href="../"><img src="../img/logo.png" alt="Sage Performance Horses - Tioga Texas"></a></h1>
 </header>
 
 <div class="mainWrapper">
 <main>
-    <article>
+    <article><!-- TemplateBeginEditable name="content" -->
 		<h1>About Us</h1>
 		<figure class="banner">
-			<img src="img/about.jpg" alt="" />
-		</figure>		
+			<img src="../img/about.jpg" alt="" />
+		</figure>
 		<p>Stephanie Sage has worked with some of the most respected and successfull trainers in the industry in all disciplines. She is pleased to announce the opening of her own training facility in the heart of Texas horse country offering personalized training programs and care. With a very limited number of training horses being accepted, each client and horse will recieve a level of service and attention not found in most large training facilities. Whether hunter, western, country or English, Stephanie is a rising star in the industry creating successful and happy show horses in the open, amateur and youth divisions.</p>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat varius elit, sed maximus nulla vehicula a. Nullam eget porta nisi. Aliquam vitae quam eros. Vestibulum vestibulum nisl in nisi finibus placerat. Phasellus at lorem metus. Maecenas consequat accumsan vulputate. Ut aliquet at turpis et aliquam.</p>
 		<p>Integer interdum lobortis velit, ut luctus dui viverra sed. Quisque eleifend dui eros, vitae porttitor lorem tincidunt vitae. Quisque faucibus magna at mattis congue. Suspendisse luctus quam quis turpis vulputate accumsan. Curabitur volutpat aliquet erat vitae dapibus. Nam vehicula eu risus id facilisis. Nulla sit amet pharetra lorem. Nullam luctus eleifend cursus. Quisque placerat risus sed lacus pulvinar dictum. Suspendisse sit amet pulvinar dolor. Curabitur finibus nisl vitae venenatis iaculis. Mauris placerat tortor orci, a porta metus malesuada quis. Sed neque velit, accumsan vitae venenatis eget, auctor ultrices eros. Fusce a est eget augue varius laoreet. Mauris nec dui laoreet mauris facilisis varius a a mauris. Suspendisse dapibus vehicula vestibulum.</p>
-    </article>
+<!-- TemplateEndEditable --></article>
 </main>
 </div>
 
 <footer>
-    <p>Tioga, Texas &bull; 571.525.8668 &bull; <a href="mailto:SagePerformanceHorses@yahoo.com">SagePerformanceHorses@yahoo.com</a></p>
+    <p>Tioga, Texas &bull; <a href="tel:+15715258668">571.525.8668</a> &bull; <a href="mailto:SagePerformanceHorses@yahoo.com">SagePerformanceHorses@yahoo.com</a></p>
 </footer>
 </div>
 
 <nav class="sideMenu">
-    <a href="home.html"><img src="img/logo-white.png" alt="" /></a>
+    <a href="../"><img src="../img/logo-white.png" alt="Sage Performance Horses in Texas" /></a>
     <ul>
-	<li><a href="about.html">About</a></li>
-	<li><a href="services.html">Services</a></li>
-	<li class="parent"><a href="horses.html">Sales Horses</a><!--
+	<li><a href="../about/">About</a></li>
+	<li><a href="../services/">Services</a></li>
+	<li class="parent"><a href="../sales/">Sales Horses</a><!--
 	    --><ul><!--
-	    --><li><a href="horses.html">Hunter Horses</a></li><!--
-	    --><li><a href="horses.html">Western Horses</a></li><!--
-	    --><li><a href="horses.html">English Country Horses</a></li><!--
+	    --><li><a href="../sales/#hunter">Hunter Horses</a></li><!--
+	    --><li><a href="../sales/#western">Western Horses</a></li><!--
+	    --><li><a href="../sales/#english-country">English Country Horses</a></li><!--
 	    --></ul>
 	</li>
-	<li><a href="news.html">News and Events</a></li>
-	<li><a href="#">Contact</a></li>
+	<li><a href="../news/">News and Events</a></li>
+	<li><a href="../contact/">Contact</a></li>
     </ul>
+    <h5 class="copyright">&copy; <a href="http://www.kmni.com">KMNI</a> designed</h5>
     <span class="close"></span>
 </nav>
-
-<!--<script src="./js/script.js"></script>-->
-
 
 </body>
 </html>

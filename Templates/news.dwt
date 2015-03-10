@@ -6,61 +6,62 @@
 <!--[if gt IE 9]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8" />
-	<title>SageHorses</title>
-	<meta name="description" content="" />
+	<!-- TemplateBeginEditable name="doctitle" -->
+	<title>Sage Performance Horses</title>
+	<!-- TemplateEndEditable -->
+	<meta name="description" content="Whether hunter, western, country or English, Stephanie is a rising star in the industry creating successful and happy show horses in the open, amateur and youth divisions." />
 	<meta name="robots" content="index,follow" />
-
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	
+    <link rel="shortcut icon" href="../favicon.ico">
+	<link rel="icon" href="../favicon.ico">
+
 	<script>
 		document.documentElement.className = document.documentElement.className.replace(/(^|\s)no-js(\s|$)/, "$1js$2");
 	</script>
-	
-	<link href="./css/style.css" rel="stylesheet" media="all" />
-	
-	<script src="./js/script.js"></script>
-	
+
+	<link href="../css/style.css" rel="stylesheet" media="all" />
+    <link href="../css/custom.css" rel="stylesheet">
+    
+    <script src="../js/script.js"></script>
+
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
 </head>
-<body class="">	
-	
+<body class="">
+
 <div id="wrapper">
 <aside class="topLinks">
     <ul class="social">
-	<li class="facebook"><a href="#"><span>Facebook</span></a></li>
-	<li class="email"><a href="#"><span>E-mail</span></a></li>
+	<li class="facebook"><a href="https://www.facebook.com/sageperformancehorses" target="_blank"><span>Facebook</span></a></li>
+	<li class="email"><a href="mailto:SagePerformanceHorses@yahoo.com"><span>E-mail</span></a></li>
     </ul>
-    
+
     <ul class="toggleMenu">
 	<li class="menu"><span>Menu</span></li>
     </ul>
-</aside>	
+</aside>
 
 <header class="pageHeader">
-    <h1 class="logo"><a href="home.html"><img src="img/logo.png" alt="Sage Horses" /></a></h1>
+    <h1 class="logo"><a href="../"><img src="../img/logo.png" alt="Sage Performance Horses - Tioga Texas"></a></h1>
 </header>
 
 <div class="mainWrapper">
 <main>
     <div class="news">
-		<h2>News</h2>  
+		<h2>News</h2>
 
-		<div class="gallery external">
-			<div class="item">
-				<a href="img/news-gallery-1.jpg" class="photo lightbox"><img src="img/news-gallery-1.jpg" alt="" /><span class="external"></span><span class="large">View Large</span></a>
-			</div>
-			<div class="item">
-				<a href="img/news-gallery-1.jpg" class="photo lightbox"><img src="img/news-gallery-1.jpg" alt="" /><span class="external"></span><span class="large">View Large</span></a>
-			</div>
-		</div>
+		<div class="gallery external"><!-- TemplateBeginEditable name="news" -->
+		  <div class="item"> <a href="../img/news-gallery-1.jpg" class="photo lightbox"><img src="../img/news-gallery-1.jpg" alt="" /><span class="external"></span><span class="large">View Large</span></a> </div>
+		<!-- TemplateEndEditable --></div>
     </div>
     <div class="feed">
 		<h2>Facebook Feed</h2>
 
-		<div class="masonry external">		
-			
+		<div class="masonry external">
+
   <!-- Facebook BEGIN -->
   <div id="facebook">
 		Loading...
@@ -69,7 +70,7 @@
 	<div class="item" id="fb_post_${object_id}">
 		{{if picture}}
 		  <a href="${link}" target="_blank" class="photo"><img alt="picture" src="${Social.facebookPictureURL(picture)}" style="width:100%" /><span class="external"></span></a>
-		{{/if}}		
+		{{/if}}
 		<div class="postInfo">
 			<img src="https://graph.facebook.com/${from.id}/picture?width=66" alt="" />
 			<h2><a href="http://www.facebook.com/profile.php?id=${from.id}" target="_blank">${from.name}</a></h2>
@@ -78,45 +79,43 @@
 		<p>
 		  {{html message}}
 		</p>
-	</div>	
+	</div>
   </script>
   <script>
     // "103882419703669" is Facebook page ID
     // "392120024178056|aqQUlwOblkyuLzKmxZm39SeBVck" is Facebook authentication token
     Social.facebook("415333105245552", "392120024178056|aqQUlwOblkyuLzKmxZm39SeBVck");
   </script>
-  <!-- Facebook END -->			
-			
+  <!-- Facebook END -->
+
 		</div>
     </div>
 </main>
 </div>
 
 <footer>
-    <p>Tioga, Texas &bull; 571.525.8668 &bull; <a href="mailto:SagePerformanceHorses@yahoo.com">SagePerformanceHorses@yahoo.com</a></p>
+    <p>Tioga, Texas &bull; <a href="tel:+15715258668">571.525.8668</a> &bull; <a href="mailto:SagePerformanceHorses@yahoo.com">SagePerformanceHorses@yahoo.com</a></p>
 </footer>
 </div>
 
 <nav class="sideMenu">
-    <a href="home.html"><img src="img/logo-white.png" alt="" /></a>
+    <a href="../"><img src="../img/logo-white.png" alt="Sage Performance Horses in Texas" /></a>
     <ul>
-	<li><a href="about.html">About</a></li>
-	<li><a href="services.html">Services</a></li>
-	<li class="parent"><a href="horses.html">Sales Horses</a><!--
+	<li><a href="../about/">About</a></li>
+	<li><a href="../services/">Services</a></li>
+	<li class="parent"><a href="../sales/">Sales Horses</a><!--
 	    --><ul><!--
-	    --><li><a href="horses.html">Hunter Horses</a></li><!--
-	    --><li><a href="horses.html">Western Horses</a></li><!--
-	    --><li><a href="horses.html">English Country Horses</a></li><!--
+	    --><li><a href="../sales/#hunter">Hunter Horses</a></li><!--
+	    --><li><a href="../sales/#western">Western Horses</a></li><!--
+	    --><li><a href="../sales/#english-country">English Country Horses</a></li><!--
 	    --></ul>
 	</li>
-	<li><a href="news.html">News and Events</a></li>
-	<li><a href="#">Contact</a></li>
+	<li><a href="../news/">News and Events</a></li>
+	<li><a href="../contact/">Contact</a></li>
     </ul>
+    <h5 class="copyright">&copy; <a href="http://www.kmni.com">KMNI</a> designed</h5>
     <span class="close"></span>
 </nav>
-
-<!--<script src="./js/script.js"></script>-->
-
 
 </body>
 </html>

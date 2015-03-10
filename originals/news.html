@@ -11,32 +11,32 @@
 	<meta name="robots" content="index,follow" />
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	
+
 	<script>
 		document.documentElement.className = document.documentElement.className.replace(/(^|\s)no-js(\s|$)/, "$1js$2");
 	</script>
-	
+
 	<link href="./css/style.css" rel="stylesheet" media="all" />
-	
+
 	<script src="./js/script.js"></script>
-	
+
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 </head>
-<body class="home">	
-	
+<body class="">
+
 <div id="wrapper">
 <aside class="topLinks">
     <ul class="social">
 	<li class="facebook"><a href="#"><span>Facebook</span></a></li>
 	<li class="email"><a href="#"><span>E-mail</span></a></li>
     </ul>
-    
+
     <ul class="toggleMenu">
 	<li class="menu"><span>Menu</span></li>
     </ul>
-</aside>	
+</aside>
 
 <header class="pageHeader">
     <h1 class="logo"><a href="home.html"><img src="img/logo.png" alt="Sage Horses" /></a></h1>
@@ -44,29 +44,53 @@
 
 <div class="mainWrapper">
 <main>
-    <div class="article">
-		<p>Stephanie Sage has worked with some of the most respected and successfull trainers in the industry in all disciplines. She is pleased to announce the opening of her own training facility in the heart of Texas horse country offering personalized training programs and care. With a very limited number of training horses being accepted, each client and horse will recieve a level of service and attention not found in most large training facilities. Whether hunter, western, country or English, Stephanie is a rising star in the industry creating successful and happy show horses in the open, amateur and youth divisions.</p>
-		<a href="#" class="more">Read more</a>
+    <div class="news">
+		<h2>News</h2>
+
+		<div class="gallery external">
+			<div class="item">
+				<a href="img/news-gallery-1.jpg" class="photo lightbox"><img src="img/news-gallery-1.jpg" alt="" /><span class="external"></span><span class="large">View Large</span></a>
+			</div>
+			<div class="item">
+				<a href="img/news-gallery-1.jpg" class="photo lightbox"><img src="img/news-gallery-1.jpg" alt="" /><span class="external"></span><span class="large">View Large</span></a>
+			</div>
+		</div>
+    </div>
+    <div class="feed">
+		<h2>Facebook Feed</h2>
+
+		<div class="masonry external">
+
+  <!-- Facebook BEGIN -->
+  <div id="facebook">
+		Loading...
+  </div>
+  <script id="facebook_template" type="text/x-jquery-tmpl">
+	<div class="item" id="fb_post_${object_id}">
+		{{if picture}}
+		  <a href="${link}" target="_blank" class="photo"><img alt="picture" src="${Social.facebookPictureURL(picture)}" style="width:100%" /><span class="external"></span></a>
+		{{/if}}
+		<div class="postInfo">
+			<img src="https://graph.facebook.com/${from.id}/picture?width=66" alt="" />
+			<h2><a href="http://www.facebook.com/profile.php?id=${from.id}" target="_blank">${from.name}</a></h2>
+			<abbr class="timeago date" title="${created_time}">${created_time}</abbr>
+		</div>
+		<p>
+		  {{html message}}
+		</p>
+	</div>
+  </script>
+  <script>
+    // "103882419703669" is Facebook page ID
+    // "392120024178056|aqQUlwOblkyuLzKmxZm39SeBVck" is Facebook authentication token
+    Social.facebook("415333105245552", "392120024178056|aqQUlwOblkyuLzKmxZm39SeBVck");
+  </script>
+  <!-- Facebook END -->
+
+		</div>
     </div>
 </main>
 </div>
-
-<aside class="slider">
-    <div id="carousel" class="container owl-carousel">
-		<div><img src="img/photo1.jpg" alt="" /></div>
-		<div><img src="img/photo2.jpg" alt="" /></div>
-		<div><img src="img/photo3.jpg" alt="" /></div>
-		<div><img src="img/photo4.jpg" alt="" /></div>
-		<div><img src="img/photo5.jpg" alt="" /></div>
-		<div><img src="img/photo6.jpg" alt="" /></div>
-		<div><img src="img/photo1.jpg" alt="" /></div>
-		<div><img src="img/photo2.jpg" alt="" /></div>
-		<div><img src="img/photo3.jpg" alt="" /></div>
-		<div><img src="img/photo4.jpg" alt="" /></div>
-		<div><img src="img/photo5.jpg" alt="" /></div>
-		<div><img src="img/photo6.jpg" alt="" /></div>	
-    </div>
-</aside>
 
 <footer>
     <p>Tioga, Texas &bull; 571.525.8668 &bull; <a href="mailto:SagePerformanceHorses@yahoo.com">SagePerformanceHorses@yahoo.com</a></p>

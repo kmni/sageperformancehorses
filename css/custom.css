@@ -1,0 +1,41 @@
+::selection {color:#3d7766;background:#fff;}
+::-moz-selection {color:#3d7766;background:#fff;}
+
+.text-center {text-align:center;width:100%;max-width:100% !important;text-indent:0px !important;}
+.text-right {text-align:right;width:100%;max-width:100% !important;text-indent:0px !important;}
+
+.topLinks ul.toggleMenu {z-index:6;}
+.topLinks .menu {background-image:url("../img/icon-menu-gold.png");}
+
+#wrapper {background-attachment:fixed;}
+.mainWrapper p a:hover {color:#54907b;}
+h1 i{display:none;}
+.mainWrapper .boxes.categories {margin-bottom:50px;}
+.mainWrapper .boxes.categories .item .photo {height:auto;}
+
+.popupBox {max-width:660px;}
+.pedigreeBox {width: 1000px !important;max-width: 100%;border-top:10px solid #54907b;}
+.pedigreeBox table td {border:0;border-top:1px solid #e8e8e8;text-transform:uppercase;}
+.pedigreeBox table td.nobord {border:0;}
+.mainWrapper .boxes.categories .sold {opacity:0.5;}
+.mainWrapper .boxes.categories .sold:before {content:"SOLD";font-family:"Raleway",sans-serif;text-align:right;position:absolute;color:#feead1;z-index:5;right:10px;top:10px;font-size:1.3em;font-weight:bold;text-shadow:1px 1px 3px #27272F;}
+/*.mainWrapper .boxes.categories .sold:after {position:absolute;background:#27272F;top:0;left:0;bottom:0;right:0;z-index:5;content:" ";pointer-events: none;opacity:0.5;}*/
+
+article h2 {font-size: 2.4em;color: #D6BA97;padding: 0px 0px 20px;}
+
+h5.copyright {width:100%;padding:10px 10px 10px 25px;color:#27272F;font-size:1.25em;font-family:"Raleway",sans-serif;}
+h5.copyright a:hover {color:#54907b}
+
+@media only screen and (max-width: 800px) {
+	.mainWrapper .boxes.categories .item {margin-bottom:2%;}
+	.mainWrapper .boxes.categories .item .inner {height:auto !important;}
+	.mainWrapper .boxes.categories .item .photo {width:100%;height:auto;}
+	.mainWrapper .boxes.categories .item p {left:inherit;}
+	.mainWrapper .boxes.categories .item .pedigree {width:100%;}
+}
+@media only screen and (max-width: 556px) {
+	h1 i {display:table;clear:both;content:" ";}
+}
+@media only screen and (max-width: 480px) {
+	.sideMenu img {display:block;margin:10px auto;height:115px;}
+}
