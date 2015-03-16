@@ -223,4 +223,13 @@ $('.categories .onHover').hover(function () {
 	$parent.find('.hovered').removeClass('hovered');
 });
 
+(function() {
+	$('.slider').imagesLoaded( function() {
+		$(window).resize();
+	});
+	$('.boxes.special, .boxes.categories').imagesLoaded( function() {
+		$(window).resize();
+	});
+}());
+
 });
