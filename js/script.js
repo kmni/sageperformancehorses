@@ -1223,6 +1223,7 @@ $(window).resize(function() {
 
 		// Set the same height for all Category Boxes
 		var $boxesC = $('.boxes.categories .item .inner');
+		$boxesC.css("height", "auto");
 		var highestC = 0;
 		$boxesC.each(function () {
 			var $elem = $(this);
